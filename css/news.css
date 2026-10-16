@@ -1,0 +1,27 @@
+.news-wrap{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    /* 배분을 1로 똑같이 주겠다..? 뭔 말이여 */
+}
+.news-wrap li{
+    padding: 5%;
+    background-color: aliceblue;
+}
+.pic{
+    /* 이미지가 아니라 이미지 영역의 높이 */
+    position: relative;
+    height: 180px;
+    /* 높이를 줬더니 글자가 올라감 */
+    overflow: hidden;
+}
+.pic img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: block;
+}
+.news-wrap li h3{
+    padding: 2% 0;
+}

@@ -14,8 +14,170 @@
     <link rel="stylesheet" href="css/puter.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/visual.css">
+    <!-- Swiper cdn -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
+     <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+        <!-- 상단 -->
+        <header class="header">
+            <div class="inner">
+                <!-- header-top -->
+                <div class="header-top">
+                    <ul class="util">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <!-- header-bt -->
+                <div class="header-bt">
+                    <!-- logo : 항상 메인이므로 a 태그-->
+                    <h1><a href="#">GREEN-A</a></h1>
+                    <!-- menu -->
+                    <ul class="nav">
+                        <li><a href="#">DEPARTMENT</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">YOUTUEB</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                        <li><a href="#">LOCATION</a></li>
+                    </ul>
+                    <!-- 모바일 메뉴 -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 모바일 사이드 메뉴 -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+                <li><a href="#">연락처</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+        <!-- 비주얼 -->
+        <div class="visual">
+            <!-- 비디오 -->
+            <video autoplay loop muted> 
+                <!-- 자동 재생 계속 재생 음소거(음소거를 기본 설정해줘야 재생 가능) -->
+                <source src="images/visual.mp4" type="video/mp4">
+            </video>
+            <!-- 비디오 내용 -->
+            <div class="video-inner inner">
+                <h2>INNVATION</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis, asperiores
+                accusantium mollitia
+            </P>
+            <a href="#">view detail</a>
+            </div>
+        </div>
+        <!-- 뉴스 -->
+        <section class="news">
+            <div class="inner">
+                <h2>RECENT NEWS</h2>
+                <ul class="news-wrap">
+                    <li>
+                        <div class="pic">
+                            <img src="images/news1.jpg" alt="news">
+                        </div>
+                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem corporis cum sed dolor. Quod?</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/news2.jpg" alt="news">
+                        </div>
+                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem corporis cum sed dolor. Quod?</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/news3.jpg" alt="news">
+                        </div>
+                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem corporis cum sed dolor. Quod?</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/news4.jpg" alt="news">
+                        </div>
+                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem corporis cum sed dolor. Quod?</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 상품(스와이퍼) -->
+        <section class="product">
+            <div class="inner">
+                <h2>PRODUCT</h2>
+                <p>다양한 상품을 경험하세요</p>
+                <!-- swiper 시작 -->
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- 슬라이드 1 -->
+                        <div class="swiper-slide">
+                            <img src="images/about-03-1.png" alt="product">
+                            <div class="slide-info">
+                                <h3>Creative Design</h3>
+                                <p>창의적인 디자인 상품</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 2 -->
+                        <div class="swiper-slide">
+                            <img src="images/about-05-1.png" alt="product">
+                            <div class="slide-info">
+                                <h3>Creative Design</h3>
+                                <p>창의적인 디자인 상품</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 3 -->
+                        <div class="swiper-slide">
+                            <img src="images/brand4.jpg" alt="product">
+                            <div class="slide-info">
+                                <h3>Creative Design</h3>
+                                <p>창의적인 디자인 상품</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 4 -->
+                        <div class="swiper-slide">
+                            <img src="images/draw-cristmas.png" alt="product">
+                            <div class="slide-info">
+                                <h3>Creative Design</h3>
+                                <p>창의적인 디자인 상품</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 5 -->
+                        <div class="swiper-slide">
+                            <img src="images/draw-new.png" alt="product">
+                            <div class="slide-info">
+                                <h3>Creative Design</h3>
+                                <p>창의적인 디자인 상품</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 하단 -->
+    </div>
 </body>
 </html>
