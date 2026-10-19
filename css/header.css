@@ -1,6 +1,11 @@
 /* header */
 .header{
     width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    /* 헤더 고정 */
 }
 /* header-top */
 .util{
@@ -14,6 +19,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header-bt h1{
+    font-size: clamp(24px , 3vw , 32px);
 }
 /* 메뉴 */
 .nav{
@@ -81,5 +89,12 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    /* 영역을 안 보이게 */
+    transition: all 0.3s;
+}
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
 }

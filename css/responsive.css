@@ -10,4 +10,37 @@
     .hamburger{
         display: flex;
     }
+    /* 햄버거 메뉴 클릭 시 X로 변경 */
+    .hamburger:hover span:nth-child(1){
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger:hover span:nth-child(2){
+        display: none;
+    }
+    .hamburger:hover span:nth-child(3){
+        transform: rotate(45deg) translate(0px, -5px);
+    }
+    .news-wrap li{
+        width: calc((100% - 2%) / 2);
+    }
+    /* 하단 */
+    .upper{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media (max-width: 390px){
+    .news-wrap li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    section .inner{
+        padding: 60px 0;
+    }
+    .upper{
+        padding-bottom: 20px;
+    }
+    .lower{
+        margin-top: 20px;
+    }
 }
